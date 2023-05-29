@@ -17,9 +17,9 @@ export default function MeuContador(){
     return(
         <div className="container">
             <h1>Meu Contador: {contador}</h1>
-            {contador > 9 ? <h1>Valor muito grande</h1> : null}
+            {contador > 9 ? <h1>Valor muito grande, pressione Diminuir"</h1> : null}
             {contador >= 0 && contador <= 9 ? <h1>Bom Numero!</h1> : null}
-            {contador < 0 ? <h1>Valor muito Pequeno</h1> : null}
+            {contador < 0 ? <h1>Valor muito pequeno, pressione Aumentar</h1> : null}
             <div className="buttons">
                 <button className={styles.myButton} onClick={aumentar}>Aumentar</button>
                 <button className={styles.myButton} onClick={diminuir}>Diminuir</button>
